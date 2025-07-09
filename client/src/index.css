@@ -12,3 +12,12 @@
     --color-bgPrimary: #FFFFFF;
     --color-bgSecondary: #F7F7F7
 }
+
+/* Hide scrollbars for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
