@@ -5,11 +5,11 @@ export type NavbarLink = {
 }
 export const Links: NavbarLink[] = [{
     id: 1,
+    title: "Learn Languages",
+    route: "/languages",
+},{
+    id: 2,
     title: "about",
     route: "/about"
 },
-{
-    id: 2,
-    title: "hellofluent",
-    route: "/hellofluent"
-}]
+]
