@@ -12,8 +12,8 @@ function Loading() {
                     speedMultiplier={0.8} // Smoother, slower animation
                     margin={6}
                 />
-                <span className="mt-6 text-lg text-gray-600 animate-pulse">
-                    Loading, please wait...
+                <span className="mt-6 tracking-widest md:text-2xl bg-gradient-to-r from-primary to-logo bg-clip-text text-transparent animate-pulse">
+                    HelloFluent
                 </span>
             </div>
         </div>
