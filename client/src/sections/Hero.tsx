@@ -1,7 +1,7 @@
 import hero_image from "../assets/hero_image.webp"
 function Hero() {
     return (
-        <section className="min-h-screen px-8 md:px-16 ">
+        <section className="md:min-h-screen px-8 md:px-16 py-6">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center  ">
                 {/* text content container  */}
                 <div className="md:order-1  order-2 text-center md:text-left">
