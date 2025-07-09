@@ -19,7 +19,7 @@ function CountriesFlags() {
         <div className="mt-16 overflow-hidden relative flex items-center gap-2">
             {/* Left Button (hidden on mobile) */}
             <button
-                className="hidden md:flex   z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 transition"
+                className="hidden md:flex  cursor-pointer  z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 transition"
                 onClick={() => scroll('left')}
                 aria-label="Scroll left"
                 type="button"
@@ -53,7 +53,7 @@ function CountriesFlags() {
             </div>
             {/* Right Button (hidden on mobile) */}
             <button
-                className="hidden md:flex   z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 transition"
+                className="hidden md:flex cursor-pointer   z-10 bg-white shadow p-2 rounded-full hover:bg-gray-100 transition"
                 onClick={() => scroll('right')}
                 aria-label="Scroll right"
                 type="button"
