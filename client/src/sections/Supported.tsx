@@ -8,8 +8,7 @@ function Supported() {
         <section className="md:px-16 px-8 bg-bgSecondary py-10">
             <ShowSupport />
             <CountriesFlags />
-            <TagLine/>
-            
+            <TagLine />
         </section>
     )
 }
