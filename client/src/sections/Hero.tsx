@@ -1,7 +1,7 @@
 import hero_image from "../assets/hero_image.webp"
 function Hero() {
     return (
-        <section className="md:min-h-screen px-8 md:px-16 py-6">
+        <section className="md:min-h-[50vh] px-8 md:px-16 py-6">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center  ">
                 {/* text content container  */}
                 <div className="md:order-1  order-2 text-center md:text-left">
@@ -18,7 +18,7 @@ function Hero() {
                 </div>
                 {/* image content container  */}
                 <div className="md:order-2 flex justify-end items-center order-1 md:w-full md:h-full w-[250px] h-[350px] mx-auto">
-                    <img src={hero_image} alt="HelloFluent" loading="lazy" className="object-cover" />
+                    <img src={hero_image} alt="HelloFluent-worldImage" loading="lazy" className="object-cover"  />
                 </div>
 
             </div>

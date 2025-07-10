@@ -9,6 +9,7 @@ function Supported() {
             <ShowSupport />
             <CountriesFlags />
             <TagLine/>
+            
         </section>
     )
 }
