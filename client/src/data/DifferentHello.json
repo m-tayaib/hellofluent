@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "personImage": "../assets/banjour.png",
+        "personImage": "../assets/pakistan.jpg",
         "greeting": "سلام",
         "language": "Urdu",
         "flagImage": "https://flagcdn.com/w160/pk.png"
@@ -15,7 +15,7 @@
     },
     {
         "id": 2,
-        "personImage": "/assets/brazil.jpeg",
+        "personImage": "/assets/hola.png",
         "greeting": "Hola",
         "language": "Spanish",
         "flagImage": "https://flagcdn.com/w160/es.png"
@@ -43,14 +43,14 @@
     },
     {
         "id": 6,
-        "personImage": "/assets/banjour2.png",
+        "personImage": "/assets/Portuguese.jpg",
         "greeting": "Olá",
         "language": "Portuguese",
         "flagImage": "https://flagcdn.com/w160/br.png"
     },
     {
         "id": 7,
-        "personImage": "/assets/banjour.png",
+        "personImage": "/assets/russian.jpg",
         "greeting": "Привет",
         "language": "Russian",
         "flagImage": "https://flagcdn.com/w160/ru.png"
@@ -71,9 +71,9 @@
     },
     {
         "id": 10,
-        "personImage": "/assets/banjour.png",
+        "personImage": "/assets/china.jpeg",
         "greeting": "你好",
         "language": "Chinese",
-        "flagImage": "https://flagcdn.com/w160/china.png"
+        "flagImage": "https://flagcdn.com/w160/cn.png"
     }
 ]

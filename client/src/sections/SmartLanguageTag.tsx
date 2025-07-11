@@ -1,4 +1,3 @@
-import World_Imag from "../assets/world.jpg"
 function SmartLanguageTag() {
     return (
         <section className=" md:py-16 py-8 px-8 md:px-16  ">
@@ -27,7 +26,7 @@ function SmartLanguageTag() {
                 {/* image div  */}
                 <div className="flex items-center justify-center mb-5 md:mb-0 md:justify-end bg-transparent md:order-2 order-1">
                     <img 
-                        src={World_Imag} 
+                        src={"/assets/world.jpg"} 
                         alt="world Image" 
                         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover bg-transparent" 
                         style={{ backgroundColor: "transparent" }}

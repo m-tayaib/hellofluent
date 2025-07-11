@@ -1,5 +1,3 @@
-import connect_people from "../assets/connectPeople.webp"
-
 function ConnectPeople() {
     return (
         <section className=" md:py-16 py-8 px-8 md:px-16 bg-bgSecondary  ">
@@ -7,7 +5,7 @@ function ConnectPeople() {
                 {/* image div  */}
                 <div className="flex items-center justify-center mb-5 md:mb-0 md:justify-start bg-transparent md:order-1 order-2 ">
                     <img
-                        src={connect_people}
+                        src={"/assets/connectPeople.webp"}
                         alt="world Image"
                         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover bg-transparent"
                         style={{ backgroundColor: "transparent" }}

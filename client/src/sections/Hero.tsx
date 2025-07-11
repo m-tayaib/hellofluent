@@ -1,4 +1,3 @@
-import hero_image from "../assets/hero_image.webp"
 function Hero() {
     return (
         <section className="md:min-h-[50vh] px-8 md:px-16 py-6">
@@ -18,7 +17,7 @@ function Hero() {
                 </div>
                 {/* image content container  */}
                 <div className="md:order-2 flex justify-end items-center order-1 md:w-full md:h-full w-[250px] h-[350px] mx-auto">
-                    <img src={hero_image} alt="HelloFluent-worldImage" loading="lazy" className="object-cover"  />
+                    <img src={"/assets/hero_image.webp"} alt="HelloFluent-worldImage" loading="lazy" className="object-cover"  />
                 </div>
 
             </div>
