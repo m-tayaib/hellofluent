@@ -8,7 +8,7 @@ function World() {
 
 
     return (
-        <section className="relative md:min-h-[70vh]  px-4 sm:px-8 md:px-16 overflow-hidden"
+        <section className="relative md:min-h-[70vh]  px-4 sm:p-8 md:p-16 overflow-hidden"
             style={{
                 backgroundImage: `url(/assets/world_map4.jpg)`,
                 backgroundPosition: "top",
