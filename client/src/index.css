@@ -21,3 +21,14 @@ html, body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+@media (max-width: 768px) {
+  .bg-size-contain-mobile {
+    background-size: contain !important;
+  }
+}
+@media (min-width: 769px) {
+  .bg-size-contain-mobile {
+    background-size: cover !important;
+  }
+}

@@ -1,0 +1,79 @@
+[
+    {
+        "id": 0,
+        "personImage": "../assets/banjour.png",
+        "greeting": "سلام",
+        "language": "Urdu",
+        "flagImage": "https://flagcdn.com/w160/pk.png"
+    },
+    {
+        "id": 1,
+        "personImage": "/assets/british.png",
+        "greeting": "Hello",
+        "language": "English",
+        "flagImage": "https://flagcdn.com/w160/gb.png"
+    },
+    {
+        "id": 2,
+        "personImage": "/assets/brazil.jpeg",
+        "greeting": "Hola",
+        "language": "Spanish",
+        "flagImage": "https://flagcdn.com/w160/es.png"
+    },
+    {
+        "id": 3,
+        "personImage": "/assets/banjour.png",
+        "greeting": "Bonjour",
+        "language": "French",
+        "flagImage": "https://flagcdn.com/w160/fr.png"
+    },
+    {
+        "id": 4,
+        "personImage": "/assets/hola.png",
+        "greeting": "Ciao",
+        "language": "Italian",
+        "flagImage": "https://flagcdn.com/w160/it.png"
+    },
+    {
+        "id": 5,
+        "personImage": "/assets/germany.png",
+        "greeting": "Hallo",
+        "language": "German",
+        "flagImage": "https://flagcdn.com/w160/de.png"
+    },
+    {
+        "id": 6,
+        "personImage": "/assets/banjour2.png",
+        "greeting": "Olá",
+        "language": "Portuguese",
+        "flagImage": "https://flagcdn.com/w160/br.png"
+    },
+    {
+        "id": 7,
+        "personImage": "/assets/banjour.png",
+        "greeting": "Привет",
+        "language": "Russian",
+        "flagImage": "https://flagcdn.com/w160/ru.png"
+    },
+    {
+        "id": 8,
+        "personImage": "/assets/japan.png",
+        "greeting": "こんにちは",
+        "language": "Japanese",
+        "flagImage": "https://flagcdn.com/w160/jp.png"
+    },
+    {
+        "id": 9,
+        "personImage": "/assets/koera.png",
+        "greeting": "안녕하세요",
+        "language": "Korean",
+        "flagImage": "https://flagcdn.com/w160/kr.png"
+    },
+    {
+        "id": 10,
+        "personImage": "/assets/banjour.png",
+        "greeting": "你好",
+        "language": "Chinese",
+        "flagImage": "https://flagcdn.com/w160/china.png"
+    }
+]
