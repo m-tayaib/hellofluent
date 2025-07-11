@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 import DifferentHello from "../components/DifferentHello";
 import { differentHelloData } from "../Types/DifferentHello";
 
+const fullList = [...differentHelloData, ...differentHelloData];
+const reversedList = [...fullList].reverse();
 function World() {
-    const fullList = [...differentHelloData, ...differentHelloData]; // duplicate for smooth infinite scroll
-    const reversedList = [...fullList].reverse();
+
 
     return (
         <section className="relative md:min-h-[70vh]  px-4 sm:px-8 md:px-16 overflow-hidden"
