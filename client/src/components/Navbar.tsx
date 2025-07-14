@@ -65,6 +65,13 @@ function Navbar() {
                                 </Link>
                             </li>
                         ))}
+                        <Link
+                            to={"/"}
+                            className="block px-6 py-3 rounded-md text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium text-2xl"
+                            onClick={() => setMobileOpen(false)}
+                        >
+                            Home
+                        </Link>
                     </ul>
                 </div>
             )}
