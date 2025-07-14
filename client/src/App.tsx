@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Loading from "./components/Loading";
+import Footer from "./sections/Footer";
 
 const Navbar = lazy(() => import("./components/Navbar"))
 const Home = lazy(() => import("./Pages/Home"));
@@ -22,8 +23,8 @@ function App() {
             {/* Add more routes here */}
           </Routes>
         </Suspense>
-       
     </div>
+    <Footer/>
   </>
   );
 }

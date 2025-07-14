@@ -4,6 +4,7 @@ import SmartLanguageTag from "../sections/SmartLanguageTag"
 import ConnectPeople from "../sections/ConnectPeople"
 import World from "../sections/World"
 import LearnFavouritLanguage from "../sections/LearnFavouritLanguage"
+import Testimonial from "../sections/Testimonial"
 function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ function Home() {
       <ConnectPeople />
       <World />
       <LearnFavouritLanguage />
+      <Testimonial/>
     </>
   )
 }
