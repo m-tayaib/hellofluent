@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { SiSololearn } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -7,11 +7,22 @@ import { Links } from "../Types/NavbarTypes"
 
 
 
+
 function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [scrollY, setScrollY] = useState(window.scrollY);
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollY(window.scrollY);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     const navigate = useNavigate();
     return (
-        <nav className="  fixed  top-0 left-0 w-full h-16 bg-white shadow-sm flex items-center justify-between px-8 md:px-16   z-40">
+        <nav className={` fixed  top-0 left-0 ${scrollY > 0 ? "bg-white/50 backdrop-blur-2xl shadow-sm w-full h-16" : "w-full h-16"} flex items-center justify-between px-8 md:px-16   z-40`}>
             {/* logo  */}
             <div
                 role="button"
@@ -28,7 +39,7 @@ function Navbar() {
                         <li key={link.id}>
                             <Link
                                 to={link.route}
-                                className={`px-4 py-2 rounded-md shadow-md text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium ${window.location.pathname === link.route && "bg-primary  text-white"} `}
+                                className={`px-4 py-2 rounded-md   text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium ${window.location.pathname === link.route && "bg-primary  text-white"} `}
                             >
                                 {link.title}
                             </Link>
