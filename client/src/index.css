@@ -19,7 +19,8 @@
 }
 html, body {
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  scrollbar-width: none;  
+  user-select: none;   /* Firefox */
 }
 
 @media (max-width: 768px) {
