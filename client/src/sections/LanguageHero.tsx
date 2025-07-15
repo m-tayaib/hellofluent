@@ -3,7 +3,7 @@
 function LanguageHero() {
     return (
         <section
-            className="relative w-full   h-[70%] md:min-h-screen px-2 xs:px-4 sm:px-8 md:px-16 flex items-center justify-center bg-cover bg-no-repeat bg-bottom "
+            className="relative w-full   h-[70%] md:min-h-screen px-2 xs:px-4 sm:px-8 md:px-16 flex items-center justify-center bg-cover   bg-bottom "
             style={{
                 backgroundImage: `url('/assets/language_hero_img.jpg')`,
             }}

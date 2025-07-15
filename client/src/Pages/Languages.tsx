@@ -1,12 +1,16 @@
 import LanguageHero from "../sections/LanguageHero";
+import LanguageLearnPath from "../sections/LanguageLearnPath";
+import LanguagePick from "../sections/LanguagePick";
 
 
 
 
 const Languages = () => {
   return (
-    <div className="">
+    <div>
       <LanguageHero />
+      <LanguagePick />
+      <LanguageLearnPath />
     </div>
   );
 };
