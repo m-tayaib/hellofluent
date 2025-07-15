@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { Links } from "../Types/NavbarTypes"
 
 
+
 function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const navigate = useNavigate();
@@ -27,7 +28,7 @@ function Navbar() {
                         <li key={link.id}>
                             <Link
                                 to={link.route}
-                                className="px-4 py-2 rounded-md shadow-md text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium "
+                                className={`px-4 py-2 rounded-md shadow-md text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium ${window.location.pathname === link.route && "bg-primary  text-white"} `}
                             >
                                 {link.title}
                             </Link>
