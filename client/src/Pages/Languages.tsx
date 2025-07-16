@@ -1,16 +1,17 @@
+import { lazy, Suspense } from "react";
 import LanguageHero from "../sections/LanguageHero";
-import LanguageLearnPath from "../sections/LanguageLearnPath";
-import LanguagePick from "../sections/LanguagePick";
 
-
-
+const LanguagePick = lazy(() => import("../sections/LanguagePick"));
+const LanguageLearnPath = lazy(() => import("../sections/LanguageLearnPath"));
 
 const Languages = () => {
   return (
     <div>
       <LanguageHero />
-      <LanguagePick />
-      <LanguageLearnPath />
+      <Suspense fallback={<div className="text-center py-6">Loading sections...</div>}>
+        <LanguagePick />
+        <LanguageLearnPath />
+      </Suspense>
     </div>
   );
 };

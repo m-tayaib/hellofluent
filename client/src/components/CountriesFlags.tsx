@@ -43,6 +43,8 @@ function CountriesFlags() {
                                 alt={country.name}
                                 className="w-full h-full object-cover rounded-full"
                                 loading="lazy"
+                                width={96}
+                                height={96}
                             />
                         </div>
                         <h4 className="mt-2 text-center text-xs md:text-sm font-semibold text-gray-700 whitespace-nowrap">

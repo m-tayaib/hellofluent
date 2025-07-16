@@ -8,7 +8,8 @@ function ConnectPeople() {
                         src={"/assets/connectPeople.webp"}
                         alt="world Image"
                         className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover bg-transparent"
-                        style={{ backgroundColor: "transparent" }}
+                        width={458}
+                        height={500}
                     />
                 </div>
 

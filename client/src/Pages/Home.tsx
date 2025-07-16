@@ -1,22 +1,25 @@
-import Hero from "../sections/Hero"
-import Supported from "../sections/Supported"
-import SmartLanguageTag from "../sections/SmartLanguageTag"
-import ConnectPeople from "../sections/ConnectPeople"
-import World from "../sections/World"
-import LearnFavouritLanguage from "../sections/LearnFavouritLanguage"
-import Testimonial from "../sections/Testimonial"
-function Home() {
+import Hero from "../sections/Hero";
+import { lazy, Suspense } from "react";
+
+const Supported = lazy(() => import("../sections/Supported"));
+const SmartLanguageTag = lazy(() => import("../sections/SmartLanguageTag"));
+const ConnectPeople = lazy(() => import("../sections/ConnectPeople"));
+const World = lazy(() => import("../sections/World"));
+const LearnFavouritLanguage = lazy(() => import("../sections/LearnFavouritLanguage"));
+const Testimonial = lazy(() => import("../sections/Testimonial"));
+
+export default function Home() {
   return (
     <>
       <Hero />
-      <Supported />
-      <SmartLanguageTag />
-      <ConnectPeople />
-      <World />
-      <LearnFavouritLanguage />
-      <Testimonial/>
+      <Suspense fallback={<div className="text-center py-8">Loading content...</div>}>
+        <Supported />
+        <SmartLanguageTag />
+        <ConnectPeople />
+        <World />
+        <LearnFavouritLanguage />
+        <Testimonial />
+      </Suspense>
     </>
-  )
+  );
 }
-
-export default Home

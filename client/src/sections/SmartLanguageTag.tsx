@@ -28,8 +28,9 @@ function SmartLanguageTag() {
                     <img 
                         src={"/assets/world.jpg"} 
                         alt="world Image" 
-                        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-cover bg-transparent" 
-                        style={{ backgroundColor: "transparent" }}
+                        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg  h-auto object-cover bg-transparent" 
+                        width={448}
+                        height={500}
                     />
                 </div>
 

@@ -1,4 +1,5 @@
-import {Link} from "react-router-dom"
+
+import { Link } from "react-router-dom"
 function Hero() {
     return (
         <section className="md:min-h-[50vh] px-8 md:px-16 py-6">
@@ -6,7 +7,7 @@ function Hero() {
                 {/* text content container  */}
                 <div className="md:order-1  order-2 text-center md:text-left">
                     <h1 className="text-3xl    sm:text-5xl md:text-6xl lg:text-8xl font-extrabold capitalize  leading-tight text-gray-900 mb-4 drop-shadow-sm transition-all duration-300">
-                    Fluency starts with<br />
+                        Fluency starts with<br />
                         <span className="  bg-gradient-to-r from-primary to-logo bg-clip-text text-transparent">effort</span>
                     </h1>
                     <p className="text-base   sm:text-lg md:text-xl text-gray-600 mb-6 max-w-xl leading-relaxed transition-all duration-300">
@@ -21,7 +22,14 @@ function Hero() {
                 </div>
                 {/* image content container  */}
                 <div className="md:order-2 flex justify-end items-center order-1 md:w-full md:h-full w-[250px] h-[350px] mx-auto">
-                    <img src={"/assets/hero_image.webp"} alt="HelloFluent-worldImage" loading="lazy" className="object-cover"  />
+                    <img
+                        src="/assets/hero_image.webp"
+                        alt="HelloFluent-worldImage"
+                        width={400}
+                        height={350}
+                        loading="lazy"
+                        className="object-cover w-full h-auto rounded-lg"
+                    />
                 </div>
 
             </div>

@@ -9,7 +9,7 @@ function DifferentHello(props: DifferentHelloTypes) {
                 <p>{props.greeting}</p>
             </div>
             <div className="w-[20px] h-[20px] absolute bottom-0 left-0 sm:w-[32px] sm:h-[32px] rounded-full  ">
-                <img src={props.flagImage} alt="flag-image " className="rounded-full  w-full h-full object-cover" />
+                <img src={props.flagImage} alt="flag-image " className="rounded-full  w-full h-full object-cover" width={20} height={20} />
             </div>
         </div>
     )

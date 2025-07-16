@@ -6,6 +6,9 @@ function LanguageHero() {
             className="relative w-full   h-[70%] md:min-h-screen px-2 xs:px-4 sm:px-8 md:px-16 flex items-center justify-center bg-cover   bg-bottom "
             style={{
                 backgroundImage: `url('/assets/language_hero_img.jpg')`,
+                width: "100%",
+                height: "100%",
+                
             }}
         >
             {/* Overlay */}

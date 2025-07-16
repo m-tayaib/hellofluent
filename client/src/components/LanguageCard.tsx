@@ -15,13 +15,16 @@ const LanguageCard: React.FC<LanguageCardProps> = React.memo(function LanguageCa
                 alt={`Flag representing ${toLanguage}`}
                 className="absolute left-3 top-3 sm:left-4 sm:top-4 z-30 w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full border-2 border-white shadow-md bg-white"
                 src={flagImage}
+                width={56}
+                height={56}
             />
             {/* Main Image */}
             <img
                 alt={`Profile of ${username}`}
-                className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                className="h-full w-full text-transparent object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 src={`/assets/${img}`}
-                style={{ color: "transparent" }}
+                width={100}
+                height={100}
             />
             {/* Info Section */}
             <div className="p-2 sm:p-4 md:p-5 flex absolute   bottom-1 left-0 right-0 flex-col z-30">

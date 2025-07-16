@@ -11,7 +11,7 @@ const PickLanguageCard: React.FC<PickLanguageCardProps> = ({ language, path, fla
             <div className="flex items-center gap-4  ">
                 {/* Flag and Country Name */}
                 <div className="flex items-center gap-3 pb-3 flex-1 min-w-0">
-                    <img src={flagImage} alt={language + ' flag'} className="w-8 rounded-sm h-4 md:w-10 md:h-8 shadow-md object-cover    " />
+                    <img src={flagImage} alt={language + ' flag'} className="w-8 rounded-sm h-4 md:w-10 md:h-8 shadow-md object-cover    "  width={40} height={40}/>
                     <span className="text-lg md:text-xl font-semibold text-gray-800 truncate group-hover:bg-gradient-to-r from-logo to-primary bg-clip-text group-hover:text-transparent transition-colors duration-200">{language}</span>
                 </div>
             </div>
