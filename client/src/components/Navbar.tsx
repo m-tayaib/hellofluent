@@ -4,10 +4,6 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { Links } from "../Types/NavbarTypes"
-
-
-
-
 function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false);
     const [scrollY, setScrollY] = useState(window.scrollY);
@@ -22,24 +18,36 @@ function Navbar() {
     }, []);
     const navigate = useNavigate();
     return (
-        <nav className={` fixed  top-0 left-0 ${scrollY > 0 ? "bg-white/50 backdrop-blur-2xl shadow-sm w-full h-16" : "w-full h-16"} flex items-center justify-between px-8 md:px-16   z-40`}>
-            {/* logo  */}
+        <nav
+            className={`fixed    top-0 left-0 w-full h-16 z-40 
+            flex items-center justify-between px-8 md:px-16 
+            transition-all duration-300 ease-in-out
+             ${scrollY > 0 && ` ${!mobileOpen && "bg-white/70 backdrop-blur-md "}`}
+           `}
+        >
+            {/* Logo */}
             <div
                 role="button"
                 onClick={() => navigate("/")}
-
-                className="flex items-center space-x-2 cursor-pointer">
+                className="flex items-center space-x-2 cursor-pointer"
+            >
                 <SiSololearn className="text-2xl text-logo" />
-                <h3 className="text-xl font-bold text-primary capitalize">HelloFluent</h3>
+                <h3 className="text-xl font-bold text-primary capitalize">
+                    HelloFluent
+                </h3>
             </div>
-            {/* navlinks - desktop */}
+
+            {/* Navlinks - Desktop */}
             <div className="hidden md:block">
                 <ul className="flex space-x-6">
                     {Links.map((link) => (
                         <li key={link.id}>
                             <Link
                                 to={link.route}
-                                className={`px-4 py-2 rounded-md   text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium ${window.location.pathname === link.route && "bg-primary  text-white"} `}
+                                className={`px-4 py-2 rounded-md text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium ${window.location.pathname === link.route
+                                    ? "bg-primary text-white"
+                                    : ""
+                                    }`}
                             >
                                 {link.title}
                             </Link>
@@ -47,17 +55,19 @@ function Navbar() {
                     ))}
                 </ul>
             </div>
-            {/* Hamburger - mobile */}
+
+            {/* Hamburger - Mobile */}
             <button
-                className="md:hidden text-3xl text-primary focus:outline-none"
+                className="md:hidden cursor-pointer text-3xl text-primary focus:outline-none"
                 aria-label={mobileOpen ? "Close menu" : "Open menu"}
                 onClick={() => setMobileOpen((prev) => !prev)}
             >
                 {mobileOpen ? <FaTimes className="font-thin" /> : <FaBars className="font-thin" />}
             </button>
-            {/* Mobile menu overlay */}
+
+            {/* Mobile Menu Overlay */}
             {mobileOpen && (
-                <div className="fixed inset-0 w-full h-full bg-white/70 backdrop-blur-md z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out shadow-2xl">
+                <div className="fixed inset-0 w-full h-screen bg-white/70 backdrop-blur-md z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out shadow-2xl">
                     <button
                         className="absolute top-6 right-6 text-4xl text-primary focus:outline-none"
                         aria-label="Close menu"
@@ -77,17 +87,11 @@ function Navbar() {
                                 </Link>
                             </li>
                         ))}
-                        <Link
-                            to={"/"}
-                            className="block px-6 py-3 rounded-md text-primary capitalize hover:bg-primary hover:text-white transition-all duration-300 font-medium text-2xl"
-                            onClick={() => setMobileOpen(false)}
-                        >
-                            Home
-                        </Link>
                     </ul>
                 </div>
             )}
         </nav>
+
     );
 }
 
