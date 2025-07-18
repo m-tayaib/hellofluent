@@ -11,38 +11,38 @@ const MeetCreator: React.FC = () => {
           className="w-32 h-32 rounded-full object-cover  mb-4 md:mb-0 md:mr-8"
         />
         <div className="text-center md:text-left">
-          <h2 className="text-2xl font-bold mb-2 text-white/60">Muhamad Tayyab </h2>
+          <h2 className="text-2xl font-bold mb-2 text-white text-shadow-2xs">Muhamad Tayyab </h2>
           <h3 className="text-lg text-white mb-4">Creator of HelloFluent</h3>
-          <p className="text-white/70 mb-4">
+          <p className="text-white/50 mb-4">
             Welcome to HelloFluent! I'm Tayiab, and I created this app to make language learning engaging, interactive, and accessible for everyone. Here, you'll find tools and resources designed to help you practice, improve, and enjoy your language journey every day. Let's learn and grow together!
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <a
               href="https://github.com/m-tayaib"
-              className="text-white hover:text-"
+              className="text-primary/50  hover:text-primary hover:transition-colors duration-150 "
               aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="w-6 h-6" />
+              <FaGithub className="w-6 h-6  " />
             </a>
             <a
               href="https://www.linkedin.com/in/m-tayaib/"
-              className="text-white hover:text-"
+              className="text-primary/50  hover:text-primary hover:transition-colors duration-150 "
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="w-6 h-6" />
+              <FaLinkedin className="w-6 h-6  " />
             </a>
             <a
               href="mailto:tayyabdeveloper15@gmail.com"
-              className="text-white hover:text-"
+              className="text-primary/50  hover:text-primary hover:transition-colors duration-150 "
               aria-label="Email"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaEnvelope className="w-6 h-6" />
+              <FaEnvelope className="w-6 h-6  " />
             </a> 
           </div>
         </div>
